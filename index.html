@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/logo.jpeg" alt="Circuit board" class="logo">
+        <h1 class="RFQ-title">Request for Quote</h1>
+        <p>All fields marked with * are required.</p>
+    </div>
+
+    <form action="" method="post">
+        <fieldset class="section">
+            <legend class="section-header">Basic Info</legend>
+            
+            <div>
+                <label for="pm_name">Name *</label>
+                <input type="text" name="pm_name" id="pm_name" required>
+            </div>
+
+            <div>
+                <label for="customer">Customer *</label>
+                <input type="text" name="customer" id="customer" required>
+            </div>
+
+            <div>
+                <label for="project_name">Project Name *</label>
+                <input type="text" name="project_name" id="project_name" required>
+            </div>
+            
+            <fieldset class="radio">
+                <legend>Customer Type *</legend>
+                
+                <label for="current">
+                    <input type="radio" name="customer_type" id="current" value="current">
+                    Current
+                </label>
+
+                <label for="new">
+                    <input type="radio" name="customer_type" id="new" value="new">
+                    New
+                </label>
+            </fieldset>
+
+            <div>
+                <label for="previous_quote">Previous Quote Number</label>
+                <input type="number" name="previous_quote" id="previous_quote" step=1>
+            </div>
+        </fieldset>
+
+        <fieldset class="section">
+            <legend class="section-header">SKUs</legend>
+            <div class="SKU">
+                <p>SKU 1</p>
+                <div>
+                    <label for="model_number">Model Number *</label>
+                    <input type="text" name="model_number" id="model_number" required>
+                </div>
+                <div>
+                    <label for="volume">Volume *</label>
+                    <input type="number" name="volume" id="volume" step=1 required>
+                </div>
+                <div>
+                    <label for="location">Location</label>
+                    <select name="location" id="location">
+                        <option value="juarez">Juarez, Mexico</option>
+                        <option value="shanghai">Shanghai, China</option>
+                        <option value="da_nang">Da Nang, Vietnam</option>
+                        <option value="fayetteville">Fayetteville, Arkansas</option>
+                        <option value="corinth">Corinth, Mississippi</option>
+                        <option value="oakdale">Oakdale, Minnesota</option>
+                    </select>
+                </div>
+            </div>
+            <div class="button">
+                <button type="button" class="add_sku">+</button>
+            </div>
+        </fieldset>
+
+        <div class="button">
+            <button type="submit">Submit</button>
+        </div>
+        
+    </form>
+</body>
+</html>

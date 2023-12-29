@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Montserrat";
+    src:
+        url("fonts/Montserrat-VariableFont_wght.ttf"),
+        url("fonts/Montserrat-Italic-VariableFont_wght.ttf");
+        font-weight: normal;
+        font-style: normal;
+}
+
+body {
+    background-color: #c9c9c9;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 1rem;
+    color: black;
+}
+
+
+.section,
+.header {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 3px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.header {
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    margin-top: 0px;
+}
+
+.RFQ-title {
+    font-size: 2rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+form .section-header  {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 0;
+    float: left;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 5px;
+}
+
+input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+.radio label {
+    font-size: 0.8rem;
+}
+
+.SKU {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.SKU p {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(16, 84, 172);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+div.button {
+    margin: auto;
+}
+
+.add_sku {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+button[type="submit"] {
+    padding: 10px 30px;
+    margin: 0 20px;
+}
